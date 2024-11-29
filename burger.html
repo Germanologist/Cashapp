@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deliveroo (logo)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #33df2e;
+        }
+        /* Navigation Bar Styles */
+        .navbar {
+            background-color: #0e0301;
+            color: white;
+            padding: 10px 15px; /* Reduced padding */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px; /* Adjusted font size */
+        }
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center; /* Align items vertically center */
+        }
+        .navbar ul li {
+            margin: 0 10px; /* Reduced margin */
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px; /* Adjusted padding */
+            border-radius: 5px;
+        }
+        .navbar ul li a:hover {
+            background-color: #555;
+        }
+        /* Profile Section */
+        .profile {
+            background-color: #0e0301;
+            padding: 20px;
+        }
+        .profile h2 {
+            margin: 0;
+        }
+        /* Popular Stores Section */
+        .popular-stores {
+            background-color: #33df2e;
+            padding: 20px;
+            display: flex; /* Use flexbox for layout */
+            flex-wrap: wrap; /* Allow items to wrap onto the next line */
+            gap: 20px; /* Space between items */
+            justify-content: center; /* Center items horizontally */
+        }
+        .popular-stores h1 {
+            margin-bottom: 15px;
+            text-align: center; /* Center the title */
+            width: 100%; /* Make sure title takes full width */
+        }
+        /* Store Item Styles */
+        .store-item {
+            padding: 15px;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            background-color: #fff;
+            border-radius: 10px; /* Rounded corners */
+            width: 150px; /* Fixed width for store items */
+            text-align: center; /* Center text inside store items */
+            transition: box-shadow 0.3s; /* Smooth transition for shadow */
+        }
+        .store-item:hover {
+            background-color: #f1f1f1;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+        }
+        /* Search Bar Styles */
+        .search-bar {
+            padding: 10px; /* Reduced padding */
+            background-color: #0e0301;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .search-bar input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .search-bar button {
+            padding: 10px 15px;
+            margin-left: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search-bar button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>CASHAPP</h1>
+        <!-- Navigation Links -->
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Order.html">Orders</a></li>
+            <li><a href="Stores.html">Stores</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for food or stores...">
+                    <button>Search</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Profile Section -->
+    <div class="profile">
+        <h2>Josh Caleb Munsayac</h2>
+        <p>Grade 10 - Canva A</p>
+    </div>
+
+    <!-- Popular Stores Section -->
+    <div class="popular-stores" id="popular-stores">
+        <h1>Popular Stores</h1>
+        <div class="store-item" onclick="window.location.href='store.html'">
+            <h4>Pizza Palace</h4>
+            <p>Click to view menu</p>
+        </div>
+        <div class="store-item" onclick="window.location.href='store.html'">
+            <h4>Burger Town</h4>
+            <p>Click to view menu</p>
+        </div>
+        <div class="store-item" onclick="window.location.href='store.html'">
+            <h4>Fresh Snacks</h4>
+            <p>Click to view menu</p>
+        </div>
+    </div>
+
+</body>
+</html>
